@@ -1,6 +1,8 @@
 #!/usr/bin/env python3
 
 """
+Implementation of the Merge Sort algorithm in order to
+count the number of inversions in a list of integers.
 """
 
 import argparse
@@ -35,7 +37,9 @@ def merge_sort(A):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Compute number of inversions.")
-    parser.add_argument('filename', type=str, help="file containing list of integers")
+    parser.add_argument('filename',
+                        type=str,
+                        help="file containing list of integers")
 
     args = parser.parse_args()
 
